@@ -30,7 +30,7 @@ export class MedicosComponent implements OnInit {
     }
 
     this._medicoService.buscarMedico(termino)
-    .subscribe(medicos => this.medicos = medicos);
+    .subscribe((medicos: any) => this.medicos = medicos);
   }
 
   borrarMedico(medico: Medico) {

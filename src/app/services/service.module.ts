@@ -11,7 +11,8 @@ import {
   LoginGuardGuard,
   SubirArchivoService,
   HospitalService,
-  MedicoService
+  MedicoService,
+  AdminGuard
  } from './service.index';
 
 
@@ -21,11 +22,13 @@ import {
     HttpClientModule
   ],
   providers: [
+    LoginGuardGuard,
+    AdminGuard,
+
     SettingsService,
     SidebarService,
     SharedService,
-    UsuarioService,
-    LoginGuardGuard,
+    UsuarioService,    
     SubirArchivoService,
     ModalUploadService,
     HospitalService,
