@@ -50,7 +50,7 @@ export class MedicoService {
   guardarMedico(medico: Medico) {
     let url = URL_SERVICIOS + "/medico";
 
-    if (medico.id) {
+    if (medico._id) {
       // Si tiene un Id, estoy actualizando
       url += '/' + medico._id;
       url += "?token=" + this._usuarioService.token;

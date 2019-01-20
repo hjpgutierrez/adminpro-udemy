@@ -1,0 +1,5 @@
+<!--base href="/"-->
+
+<script>
+        window.req = window.dep = null;
+</script>
